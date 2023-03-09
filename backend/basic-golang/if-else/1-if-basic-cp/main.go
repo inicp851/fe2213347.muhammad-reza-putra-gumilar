@@ -1,0 +1,56 @@
+package main
+
+import "fmt"
+
+// Disini kalia coba melakukan if ketika kondisi nya sudah terpenuhi
+// buatlah program yang akan menampilkan nilai dari setiap mahasiswa
+// Jika nilai A = Cumlaude
+// Jika nilai B = Lulus
+// Jika nilai X = Tidak Lulus
+
+// Kalian sudah tahukan cara mengakses value map pada Go meggunakan for-range kan?
+
+func main() {
+	name1 := "Zein Fahrozi"
+	name2 := "Fabiansyah Raam"
+	name3 := "Indra Kenz"
+
+	mahasiswa := []map[string]string{
+		{
+			"name":  name1,
+			"nilai": "A",
+		},
+		{
+			"name":  name2,
+			"nilai": "B",
+		},
+		{
+			"name":  name3,
+			"nilai": "X",
+		},
+	}
+
+	// Output:
+	/*
+		Zein Fahrozi   Cumlaude
+		Fabiansyah Raam   Lulus
+		Indra Kenz   Tidak Lulus
+	*/
+<<<<<<< HEAD
+	//beginanswer
+	for _, val := range mahasiswa {
+		if val["nilai"] == "A" {
+			fmt.Println(val["name"], " ", "Cumlaude")
+		}
+		if val["nilai"] == "B" {
+			fmt.Println(val["name"], " ", "Lulus")
+		}
+		if val["nilai"] == "X" {
+			fmt.Println(val["name"], " ", "Tidak Lulus")
+		}
+	}
+	//endanswer
+=======
+	// TODO: answer here
+>>>>>>> 145f2f30a4658e5aac05d0c8f9d7f0e49c2d95fb
+}
